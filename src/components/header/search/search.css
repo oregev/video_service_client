@@ -1,0 +1,44 @@
+.search--container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.search--container > input,
+.search--container > button {
+	height: 35px;
+	border: none;
+}
+.search--container > input {
+	width: 350px;
+	padding: 0 10px;
+	background: white;
+	font-size: 1rem;
+}
+.search--container > button {
+	cursor: pointer;
+	width: 35px;
+	font-size: 1rem;
+	font-weight: bold;
+	color: var(--darkPurple);
+	background: var(--paleBlue);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-left: 3px solid black;
+}
+.search--container > button:hover {
+	background: var(--darkBlue);
+}
+
+@media only screen and (max-width: 1000px) {
+	.search--container > input {
+		width: 250px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.search--container > input {
+		width: 120px;
+	}
+}

@@ -1,0 +1,80 @@
+.header--container,
+.header--leftContainer,
+.header--rightContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header--container {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 60px;
+	padding: 0 20px;
+	background: var(--darkPurple);
+	border-bottom: 5px solid var(--borderYellow);
+}
+.header--centerContainer {
+	width: 300px;
+	height: 40px;
+	padding: 0 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border: 3px solid var(--lightPurple);
+	border-radius: 30px;
+}
+.header--centerContainer > h1 {
+	width: 0;
+	overflow: hidden;
+	border-right: 0.15em solid var(--borderYellow);
+	white-space: nowrap;
+	animation: expendHeading 3.5s 2s steps(15, end) forwards, blinkPointer 0.5s step-end infinite;
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color: white;
+}
+
+@keyframes expendHeading {
+	0% {
+		width: 0px;
+	}
+	100% {
+		width: 250px;
+	}
+}
+@keyframes blinkPointer {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: var(--borderYellow);
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.header--centerContainer {
+		width: 150px;
+	}
+	.header--centerContainer > h1 {
+		font-size: 1rem;
+		letter-spacing: initial;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.header--centerContainer {
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.header--centerContainer {
+		display: none;
+	}
+}

@@ -1,0 +1,45 @@
+.trends--container {
+	padding: 0 50px 50px 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	row-gap: 20px;
+	column-gap: 20px;
+}
+.trends--getMore {
+	width: 100%;
+	height: 80px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+.trends--getMore > button {
+	width: 200px;
+	height: 50px;
+	background: var(--paleBlue);
+	border: none;
+	border-radius: 30px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 1300px) {
+	.trends--container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.trends--container {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.trends--container {
+		grid-template-columns: 1fr;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.trends--container {
+		padding: 0 20px 20px 20px;
+	}
+}

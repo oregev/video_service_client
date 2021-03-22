@@ -1,0 +1,33 @@
+.infoBar--container {
+	width: 50%;
+	height: 50px;
+	margin-bottom: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.infoBar--likes {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+.infoBar--likes-counter > span {
+	margin-right: 5px;
+}
+.infoBar--container span,
+.infoBar--likes-counter svg {
+	color: white;
+}
+
+@media only screen and (max-width: 700px) {
+	.infoBar--likes {
+		width: 150px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.infoBar--container {
+		width: 90%;
+	}
+}

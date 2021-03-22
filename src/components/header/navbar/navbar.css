@@ -1,0 +1,30 @@
+.navbar--container {
+	height: 100%;
+	width: 300px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.navbar--link {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 1rem;
+	color: white;
+	border: none;
+}
+.navbar--link:hover {
+	color: var(--linkHover);
+}
+.navbar--link-active {
+	border-bottom: 2px solid white;
+}
+
+@media only screen and (max-width: 900px) {
+	.navbar--container {
+		width: 200px;
+	}
+	.navbar--link {
+		font-size: 0.8rem;
+	}
+}

@@ -1,0 +1,52 @@
+.player--container {
+	height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.player--container > h3,
+.player--container > video {
+	margin-bottom: 10px;
+}
+.player--container > video {
+	width: 50%;
+}
+.player--container > h3 {
+	color: var(--textYellow);
+}
+.player--note {
+	color: gray;
+}
+
+@media only screen and (max-width: 1000px) {
+	.player--container > h3 {
+		width: 60%;
+		font-size: 1rem;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.player--container > h3 {
+		font-size: 0.8rem;
+	}
+	.player--container > video {
+		width: 70%;
+	}
+	.player--note {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.player--container {
+		width: 100%;
+	}
+	.player--container > video {
+		width: 85%;
+	}
+	.player--note {
+		width: 90%;
+	}
+	.player--container > h3 {
+		margin-top: 20px;
+		width: 90%;
+	}
+}

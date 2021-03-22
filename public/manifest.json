@@ -1,0 +1,8 @@
+{
+  "short_name": "Video service",
+  "name": "Video streaming service application",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--textYellow: rgb(189, 158, 88);
+	--borderYellow: rgb(189, 158, 88);
+	--paleBlue: rgb(176, 194, 240);
+	--darkBlue: rgb(120, 156, 245);
+
+	--linkHover: rgb(201, 201, 201);
+
+	--lightPurple: rgb(55, 50, 80);
+	--darkPurple: rgb(38, 33, 58);
+	--bgImage: linear-gradient(rgb(55, 50, 80), rgb(38, 33, 58), rgb(38, 33, 58), rgb(55, 50, 80));
+}
+.App {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+button:focus,
+input:focus,
+video:focus {
+	outline: 1px solid rgb(27, 97, 184);
+}

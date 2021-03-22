@@ -1,4 +1,4 @@
-# Video service - The frontend.
+# Video service - the Client.
 
 This is a video service mockup for Interview Test.
 In this app you can:
